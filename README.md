@@ -1,24 +1,44 @@
-# Blueprint Exteriors Next.js Website
+# Blueprint Exteriors Homepage
 
-## Upload instructions
-Upload the CONTENTS of this folder to the root of your GitHub repository.
+Premium homepage prototype for Blueprint Exteriors LLC.
 
-Your GitHub root should show:
+## Upload to GitHub
+
+Upload the contents of this folder to the root of your GitHub repository. The top level should show:
+
 - app/
-- components/
-- lib/
 - public/
 - package.json
 - next.config.js
-- tsconfig.json
-- .npmrc
+- README.md
 
-Do not upload the ZIP itself.
+Do not upload the outer folder as one folder.
 
-## Vercel settings
+## Vercel Settings
+
 - Framework Preset: Next.js
-- Build Command: npm run build
 - Install Command: npm install
-- Root Directory: leave blank if these files are at the repo root
+- Build Command: npm run build
+- Root Directory: blank
 
-This package intentionally does not include package-lock.json because the previous lockfile caused npm install errors on Vercel.
+## Updating Photos
+
+Project images are in:
+
+`public/images/projects/`
+
+The homepage video is:
+
+`public/videos/blueprint-hero.mp4`
+
+The large original MOV was compressed to a web-friendly MP4 so it can upload to GitHub and load faster on the website.
+
+## Next updates
+
+Recommended next steps:
+
+1. Add the final BE logo file.
+2. Connect the estimate form to email.
+3. Add real Google reviews.
+4. Add full service pages.
+5. Add full portfolio/project pages.
