@@ -1,21 +1,18 @@
-# Blueprint Exteriors Homepage – Stable Vercel Build
+# Blueprint Exteriors Static Homepage
 
-This version uses stable patched Next.js 14.2.35 with React 18.3.1 to avoid the React 19 / Next 15 dependency warnings and Vercel security warning.
+This version has no npm, no Next.js install, and no build step. It is meant to deploy on Vercel as a static site while npm is timing out.
 
-## Upload to GitHub
-Upload the contents of this folder to the root of your GitHub repository.
-
-The top level should show:
-- app/
-- public/
-- package.json
-- next.config.js
-- README.md
+## Upload
+Upload the contents of this folder to GitHub.
 
 ## Vercel settings
-- Framework Preset: Next.js
-- Install Command: npm install
-- Build Command: npm run build
-- Root Directory: blank
+- Framework Preset: Other
+- Install Command: leave blank
+- Build Command: leave blank
+- Output Directory: leave blank or `.`
 
-If Vercel times out while downloading packages, click Redeploy. That timeout is a Vercel/npm network issue, not a code issue.
+## Editing photos
+Replace files in `assets/images/` using the same filenames.
+
+## Editing video
+Replace `assets/videos/hero.mp4`.
