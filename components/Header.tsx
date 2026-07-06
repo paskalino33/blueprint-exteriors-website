@@ -1,0 +1,3 @@
+import Link from 'next/link';
+import { site } from '@/lib/site';
+export default function Header(){return <><div className="topbar"><div className="container"><span>{site.serviceLine}</span><a href={site.phoneHref}>Call {site.phone}</a></div></div><header className="nav"><div className="container"><Link className="brand" href="/"><span className="mark">BE</span><span>BLUEPRINT<br/><span className="blue">EXTERIORS</span></span></Link><nav className="navlinks"><Link href="/#services">Services</Link><Link href="/projects">Projects</Link><Link href="/#areas">Service Areas</Link><Link href="/#contact">Contact</Link><a className="btn" href={site.phoneHref}>Call Now</a></nav><a className="btn mobile" href={site.phoneHref}>Call</a></div></header></>}

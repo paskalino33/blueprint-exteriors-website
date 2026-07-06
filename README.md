@@ -1,30 +1,53 @@
-# Blueprint Exteriors Website
+# Blueprint Exteriors LLC - Next.js Website
+
+This is a Vercel-ready Next.js website for Blueprint Exteriors LLC.
 
 ## How to upload to GitHub
+1. Download and unzip this folder.
+2. In GitHub, upload the unzipped contents to your repository.
+3. Vercel should redeploy automatically.
 
-1. Unzip this folder.
-2. Open your GitHub repository.
-3. Click **Add file → Upload files**.
-4. Drag all files/folders from this unzipped folder into GitHub.
-5. Click **Commit changes**.
-6. Vercel will automatically redeploy.
+## How to edit phone/email/business info
+Open:
 
-## Important form note
+`lib/site.ts`
 
-The estimate form currently opens an email draft to:
+Change the phone, email, service areas, services, or project list there.
 
-`blueprintexteriorsllc@gmail.com`
+## How to update pictures
+1. Add your image files to:
 
-If you want the form to submit directly without opening an email app, use Formspree, Basin, or a Vercel serverless form handler later.
+`public/projects/`
 
-## Replacing photos
+2. Open:
 
-The project gallery currently uses web-hosted sample exterior images. To use your real job photos, add them to the `assets` folder and update the image URLs in `styles.css` under `.gallery-card`.
+`lib/site.ts`
 
-## Replacing logo
+3. Change the image paths in the `projects` list.
 
-Replace this file with your final logo:
+Example:
 
-`assets/blueprint-be-logo.png`
+`image: '/projects/my-roof-job.jpg'`
 
-Keep the same file name so the website updates automatically.
+## How to connect the quote form
+This site is prepared for Formspree.
+
+1. Go to https://formspree.io
+2. Create a new form.
+3. Copy your form endpoint ID.
+4. Open `lib/site.ts`.
+5. Replace `https://formspree.io/f/YOUR_FORM_ID` with your real Formspree endpoint.
+
+## Commands
+
+Install dependencies:
+
+`npm install`
+
+Run locally:
+
+`npm run dev`
+
+Build:
+
+`npm run build`

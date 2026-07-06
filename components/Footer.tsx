@@ -1,0 +1,2 @@
+import { site } from '@/lib/site';
+export default function Footer(){return <footer className="footer"><div className="container"><strong>Blueprint Exteriors LLC</strong><p>{site.serviceLine}</p><p>Phone: <a href={site.phoneHref}>{site.phone}</a></p><p>Roofing • Siding • Windows • Doors • Gutters • Chimneys • Decks • Masonry • Carpentry</p></div><div className="float-call"><a className="btn" href={site.phoneHref}>Call {site.phone}</a></div></footer>}
